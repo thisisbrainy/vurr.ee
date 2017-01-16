@@ -8,7 +8,8 @@ $(function() {
 
 	$('#header .burger').on('click', function() {
 
-		// toggle burger
+		$(this).toggleClass('x');
+		$('#burger-menu').toggleClass('hidden');
 
 	});
 

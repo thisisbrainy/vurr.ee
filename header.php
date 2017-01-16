@@ -17,6 +17,10 @@
 </head>
 <body <?php body_class(); ?>>
 
+	<div id="burger-menu" class="hidden">
+		<?php wp_nav_menu(['theme_location' => 'primary', 'container' => '']); ?>
+	</div>
+
 	<div id="header">
 
 		<div class="left">
