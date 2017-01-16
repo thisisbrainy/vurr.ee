@@ -70,6 +70,14 @@ body {
 	margin-right: 218px;
 }
 
+@media all and (max-width: 800px) {
+
+	#header .rauno {
+		display: none;
+	}
+
+}
+
 #header .language {
 	display: block;
 	width: 40px;
@@ -134,6 +142,15 @@ body {
 	background-size: cover;
 }
 
+@media all and (max-width: 800px) {
+
+	#masthead {
+		height: auto;
+		padding-bottom: 40px;
+	}
+
+}
+
 #masthead h2 {
 	display: block;
 	width: 850px;
@@ -144,6 +161,19 @@ body {
 	padding-top: 240px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+@media all and (max-width: 850px) {
+
+	#masthead h2 {
+		width: 100%;
+		font-size: 33px;
+		text-align: left;
+		padding-top: 40px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
 }
 
 #masthead p {
@@ -157,6 +187,18 @@ body {
 	margin-right: auto;
 }
 
+@media all and (max-width: 775px) {
+
+	#masthead p {
+		width: 100%;
+		font-size: 16px;
+		text-align: left;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+}
+
 /* What We Offer */
 #what-we-offer {
 	text-align: center;
@@ -165,12 +207,30 @@ body {
 	padding-bottom: 100px;
 }
 
+@media all and (max-width: 800px) {
+
+	#what-we-offer {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+}
+
 #what-we-offer h2 {
 	line-height: 1;
 	font-size: 80px;
 	font-weight: 300;
 	color: #2e2e2e;
 	margin-bottom: 100px;
+}
+
+@media all and (max-width: 800px) {
+
+	#what-we-offer h2 {
+		font-size: 40px;
+		margin-bottom: 40px;
+	}
+
 }
 
 #what-we-offer h3 {
@@ -193,4 +253,39 @@ body {
 	background: #ddebeb;
 	padding-top: 50px;
 	padding-bottom: 50px;
+}
+
+#what-we-offer-sub .item {
+	display: inline-block;
+	width: 380px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+@media all and (max-width: 800px) {
+
+	#what-we-offer-sub .item {
+		display: block;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+
+	#what-we-offer-sub .item:last-child {
+		margin-bottom: 0;
+	}
+
+}
+
+#what-we-offer-sub .item h3 {
+	font-size: 100px;
+	font-weight: bold;
+	color: #2e2e2e;
+}
+
+#what-we-offer-sub .item h3 span {
+	display: block;
+	font-size: 20px;
+	font-weight: 300;
 }
