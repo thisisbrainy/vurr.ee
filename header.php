@@ -51,3 +51,14 @@
 		</div>
 
 	</div>
+
+	<?php if(is_front_page()): ?>
+
+		<div id="masthead">
+
+			<h2>Sinu sotsiaalmeedia ja digiagentuur</h2>
+			<p>Pole vahet, kas oled ettevõte, agentuur, üritus, bänd või Eesti president - kui mõtled digitaali peale, siis oleme sulle 24/7 kättesaadavad.</p>
+
+		</div>
+
+	<?php endif; ?>
