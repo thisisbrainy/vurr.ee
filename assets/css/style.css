@@ -46,6 +46,15 @@ body {
 	height: 31px;
 }
 
+#header .rauno {
+	width: 230px;
+	height: 65px;
+	background: url(../images/rauno.png) no-repeat;
+	background-size: cover;
+	margin-top: 16px;
+	margin-right: 218px;
+}
+
 #header .language {
 	display: block;
 	width: 40px;
