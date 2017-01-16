@@ -1,5 +1,14 @@
+<?php
 
-	<?php wp_footer(); ?>
+/**
+ * @package WordPress
+ * @subpackage vurree
+ * @since 1.0
+ */
+
+ wp_footer();
+
+ ?>
 
 </body>
 </html>

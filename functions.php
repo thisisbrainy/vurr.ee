@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * @package WordPress
+ * @subpackage vurree
+ * @since 1.0
+ */
+ 
 define('THE_DIR', __DIR__);
 
 /* Require things */
