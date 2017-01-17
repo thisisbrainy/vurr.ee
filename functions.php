@@ -5,7 +5,7 @@
  * @subpackage vurree
  * @since 1.0
  */
- 
+
 define('THE_DIR', __DIR__);
 
 /* Require things */
@@ -18,3 +18,8 @@ the_asset('css', 'reset.css', true);
 the_asset('css', 'style.css', true);
 the_asset('js', 'jquery.js', true);
 the_asset('js', 'vurr.js', true);
+
+$work = new WP_Query([
+	'post_type' => 'bcpt_work',
+	'posts_per_page' => 9999
+]);

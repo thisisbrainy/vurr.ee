@@ -19,7 +19,9 @@ body {
 }
 
 .wrap {
-
+	width: 1240px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .hidden {
@@ -248,11 +250,55 @@ body {
 	margin-right: 25px;
 }
 
+#what-we-offer .cols .item img {
+	height: 150px;
+	margin-bottom: 40px;
+}
+
+#what-we-offer .cols .item p {
+	font-size: 20px;
+	font-weight: 300;
+	color: #565858;
+	margin-top: 10px;
+}
+
+#what-we-offer .cta {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #087884;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: #7ddbda;
+	border-radius: 30px;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 60px;
+}
+
 #what-we-offer-sub {
 	text-align: center;
 	background: #ddebeb;
+	position: relative;
 	padding-top: 50px;
 	padding-bottom: 50px;
+}
+
+#what-we-offer-sub:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(221, 235, 235, 0);
+	border-bottom-color: #ddebeb;
+	border-width: 20px;
+	margin-left: -20px;
 }
 
 #what-we-offer-sub .item {
@@ -288,4 +334,84 @@ body {
 	display: block;
 	font-size: 20px;
 	font-weight: 300;
+}
+
+/* Work */
+#work {
+	text-align: center;
+	background: #fff;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+@media all and (max-width: 800px) {
+
+	#work {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+}
+
+#work h2 {
+	line-height: 1;
+	font-size: 80px;
+	font-weight: 300;
+	color: #2e2e2e;
+	margin-bottom: 100px;
+}
+
+@media all and (max-width: 800px) {
+
+	#work h2 {
+		font-size: 40px;
+		margin-bottom: 40px;
+	}
+
+}
+
+#work li {
+	list-style: none;
+	position: relative;
+	margin: 0;
+	margin-bottom: 100px;
+}
+
+#work li .image {
+	width: 810px;
+	height: 400px;
+	background-size: cover !important;
+	background-color: #cfe3e3;
+}
+
+#work li .content {
+	width: 530px;
+	text-align: left;
+	background: #ebf4f4;
+	position: absolute;
+	padding: 50px;
+	margin-top: -50px;
+	margin-left: 710px;
+}
+
+#work li .content .client {
+	font-size: 14px;
+	font-weight: bold;
+	color: #8fc1c3;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+#work li .content h3 {
+	font-size: 30px;
+	font-weight: bold;
+	color: #2e2e2e;
+	margin-bottom: 6px;
+}
+
+#work li .content .entry {
+	line-height: 1.35;
+	font-size: 20px;
+	font-weight: 300;
+	color: #565858;
 }

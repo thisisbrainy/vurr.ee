@@ -18,7 +18,7 @@ get_header(); ?>
 
 		<div class="item">
 
-			<img src="">
+			<img src="<?php bloginfo('template_directory'); ?>/assets/images/what-we-offer-1.png">
 
 			<h3>Sotsiaalmeedia</h3>
 
@@ -28,7 +28,7 @@ get_header(); ?>
 
 		<div class="item">
 
-			<img src="">
+			<img src="<?php bloginfo('template_directory'); ?>/assets/images/what-we-offer-2.png">
 
 			<h3>Veebilehed</h3>
 
@@ -72,6 +72,39 @@ get_header(); ?>
 
 	</div>
 
-</div>
+</div> <!-- // what we offer sub -->
+
+<div id="work">
+
+	<h2>Tehtud tööd</h2>
+
+	<div class="wrap">
+
+		<ul>
+
+			<?php if($work->have_posts()): while($work->have_posts()): $work->the_post(); ?>
+
+				<li>
+
+					<div class="image left" style="background:url(<?php the_post_thumbnail_url(); ?>) no-repeat;"></div>
+					<div class="content right">
+
+						<div class="client"><?php echo get_post_meta(get_the_ID(), 'client', true); ?></div>
+						<h3><?php the_title(); ?></h3>
+						<div class="entry"><?php the_content(); ?></div>
+
+					</div>
+
+					<div class="clear"></div>
+
+				</li>
+
+			<?php endwhile; endif; wp_reset_postdata(); ?>
+
+		</ul>
+
+	</div>
+
+</div> <!-- // work -->
 
 <?php get_footer();
