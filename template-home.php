@@ -105,6 +105,24 @@ get_header(); ?>
 
 	</div>
 
+	<a href="#" class="cta">Vaata kõiki tehtud töid</a>
+
 </div> <!-- // work -->
+
+<div id="testimonials">
+
+	<ul>
+
+		<?php if($testimonials->have_posts()): while($testimonials->have_posts()): $testimonials->the_post(); ?>
+
+			<li>
+
+			</li>
+
+		<?php endwhile; endif; wp_reset_postdata(); ?>
+
+	</ul>
+
+</div>
 
 <?php get_footer();
