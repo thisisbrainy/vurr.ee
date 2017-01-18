@@ -117,7 +117,7 @@ get_header(); ?>
 
 			<li>
 
-				logo ...
+				<img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
 
 			</li>
 

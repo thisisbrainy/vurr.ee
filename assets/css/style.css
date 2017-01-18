@@ -442,7 +442,19 @@ body {
 #testimonials .logos {
 	width: 100%;
 	height: 160px;
+	text-align: center;
 	border-top: 2px solid #ebf4f4;
+}
+
+#testimonials .logos li {
+	display: inline-block;
+	width: 100px;
+	height: auto;
+}
+
+#testimonials .logos li img {
+	width: 100%;
+	height: auto;
 }
 
 #testimonials .quotes {
