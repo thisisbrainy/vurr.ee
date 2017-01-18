@@ -15,8 +15,10 @@ require_once __DIR__ . '/includes/functions.php';
 
 /* Assets */
 the_asset('css', 'reset.css', true);
+the_asset('css', '../js/slick/slick.css');
 the_asset('css', 'style.css', true);
 the_asset('js', 'jquery.js', true);
+the_asset('js', 'slick/slick.js', true);
 the_asset('js', 'vurr.js', true);
 
 /* Queries */

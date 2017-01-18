@@ -115,11 +115,11 @@ get_header(); ?>
 
 		<?php if($testimonials->have_posts()): while($testimonials->have_posts()): $testimonials->the_post(); ?>
 
-			<li>
+			<div>
 
 				<img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
 
-			</li>
+			</div>
 
 		<?php endwhile; endif; wp_reset_postdata(); ?>
 
@@ -131,11 +131,11 @@ get_header(); ?>
 
 			<?php if($testimonials->have_posts()): while($testimonials->have_posts()): $testimonials->the_post(); ?>
 
-				<li>
+				<div>
 
 					quote ...
 
-				</li>
+				</div>
 
 			<?php endwhile; endif; wp_reset_postdata(); ?>
 
