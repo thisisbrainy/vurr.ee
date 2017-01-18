@@ -435,3 +435,18 @@ body {
 	padding-right: 35px;
 	margin-top: 60px;
 }
+
+/* Testimonials */
+#testimonials {}
+
+#testimonials .logos {
+	width: 100%;
+	height: 160px;
+	border-top: 2px solid #ebf4f4;
+}
+
+#testimonials .quotes {
+	background: #ebf4f4;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}

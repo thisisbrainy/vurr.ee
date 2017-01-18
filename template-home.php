@@ -111,17 +111,37 @@ get_header(); ?>
 
 <div id="testimonials">
 
-	<ul>
+	<ul class="logos">
 
 		<?php if($testimonials->have_posts()): while($testimonials->have_posts()): $testimonials->the_post(); ?>
 
 			<li>
+
+				logo ...
 
 			</li>
 
 		<?php endwhile; endif; wp_reset_postdata(); ?>
 
 	</ul>
+
+	<div class="quotes-container">
+
+		<ul class="quotes">
+
+			<?php if($testimonials->have_posts()): while($testimonials->have_posts()): $testimonials->the_post(); ?>
+
+				<li>
+
+					quote ...
+
+				</li>
+
+			<?php endwhile; endif; wp_reset_postdata(); ?>
+
+		</ul>
+
+	</div>
 
 </div>
 
